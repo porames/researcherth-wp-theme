@@ -7,7 +7,7 @@
 get_header();
 ?>
 <div>
-	<div class='featured-posts mb-5'>
+	<div class='featured-posts'>
 		<div class='container'>
 			<div class='row'>
 			<div class='col-md-6'></div>
@@ -17,7 +17,7 @@ get_header();
 			</div>
 		</div>
 	</div>
-	<div class='container'>
+	<div class='container py-5'>
 		<div class="row">
 			<div class='col-12 mb-4 text-center'>
 				<h1 class='entry-title'>บทความล่าสุด</h1>
@@ -28,6 +28,40 @@ get_header();
 			<div class="col-12 text-center">
 				<a href='#'>ดูเพิ่มเติม</a>
 			</div>			
+		</div>
+	</div>
+	<div class='container pb-5'>
+		<div class="row">
+			<div class='col-12 mb-4 text-center'>
+				<h1 class='entry-title'>The Conversation</h1>
+			</div>
+			
+			<div class="col-12">
+				<div id='conversations' class="main-carousel" data-flickity='{ "wrapAround": true }'>
+					<div class='carousel-cell'>
+						<div class='post-thumbnail-tall mb-3 position-relative text-white'>
+							<h3 class='mb-0 title-bottom-left'>ประวีร์ สินวีรุทัย</h3>
+						</div>
+					</div>
+					<div class='carousel-cell'>
+						<div class='post-thumbnail-tall mb-3 position-relative text-white'>
+							<h3 class='mb-0 title-bottom-left'>ประวีร์ สินวีรุทัย</h3>
+						</div>
+					</div>
+					<div class='carousel-cell'>
+						<div class='post-thumbnail-tall mb-3 position-relative text-white'>
+							<h3 class='mb-0 title-bottom-left'>ประวีร์ สินวีรุทัย</h3>
+						</div>
+					</div>
+					<div class='carousel-cell'>
+						<div class='post-thumbnail-tall mb-3 position-relative text-white'>
+							<h3 class='mb-0 title-bottom-left'>ประวีร์ สินวีรุทัย</h3>
+						</div>
+					</div>	
+					</div>
+				</div>
+			</div>
+			
 		</div>
 	</div>
 	<div class="w-100 py-5 mt-5 text-white" style='background-color: #212121'>

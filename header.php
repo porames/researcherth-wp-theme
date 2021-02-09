@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 	<link rel="preconnect" href="https://fonts.gstatic.com"/>
 	<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@600&family=Sarabun:wght@400;600&display=swap" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 	<?php wp_head(); ?>
 </head>
 
@@ -32,7 +34,9 @@
 						$header_logo = get_theme_mod( 'header_logo' );
 						if ( ! empty( $header_logo ) ) :
 					?>
-						<img id='researcher-logo' src="<?php echo get_template_directory_uri(); ?>/assets/images/the-researcher-logo-black.svg" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" />
+						<div id='researcher-logo' class='mr-3'>
+							<?php echo file_get_contents(__DIR__ . "/assets/images/the-researcher-logo-white.svg"); ?>
+						</div>
 					<?php
 						else :
 							echo esc_attr( get_bloginfo( 'name', 'display' ) );
@@ -70,12 +74,14 @@
 			</div><!-- /.container -->
 		</nav><!-- /#header -->
 	</header>
-	<script>
 	
+	<script>
 	window.addEventListener("scroll", function(){		
 		const navHead = document.getElementById('header')
+		const researcherLogo = document.getElementById('researcher-logo')
 		if(window.scrollY<40){			
 			navHead.classList.remove('bg-white')
+			researcherLogo.classList.remove('logo-dark')
 			navHead.classList.remove('elevation-1')
 			navHead.classList.add('bg-transparent')
 			navHead.classList.add('text-white')
@@ -85,10 +91,12 @@
 			navHead.classList.add('bg-white')
 			navHead.classList.add('elevation-1')
 			navHead.classList.add('text-dark')
+			researcherLogo.classList.add('logo-dark')
 			navHead.classList.remove('bg-transparent')
 			navHead.classList.remove('text-white')
 		}
 	})
+	
 	</script>
 	<main>
 		

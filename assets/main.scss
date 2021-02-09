@@ -103,6 +103,24 @@ $headings-line-height: 1.35;
 /**
  * General
  */
+
+ 
+#researcher-logo{
+	display: flex;
+	height: 24px;
+	svg {
+		width: auto !important;
+	}
+}
+
+.logo-dark{
+	svg {
+		path {
+			fill: #000 !important;
+		}
+	}
+}
+
 .featured-posts{
 	width: 100%;
 	height: 500px;
@@ -133,6 +151,18 @@ img {
 .post-thumbnail-2-3{
 	width: 100%;
 	padding-bottom: 66%;
+	background-color: black;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+}
+.carousel-cell{
+	margin-right: 16px;
+}
+.post-thumbnail-tall{
+	width: 400px;
+	padding-bottom: 110%;
 	background-color: black;
 	background-size: cover;
 	background-position: center;
